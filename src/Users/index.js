@@ -1,5 +1,6 @@
  import { useGetUsers } from "./hooks/useGetUsers";
- import UserCard from "../Atoms/userCard";
+ import UserCard from "../Atoms/userCard"
+ import './index.css'
 
 
  const Users = ()=>{
@@ -14,7 +15,8 @@
             fullName={`${user.firstName} ${user.lastName}`}
             key={user.id} 
             />
-        )))
+        ))
+        )
         :!loading && <h2>No users found </h2>}
         {error.length > 0 && <h2> Error:{error} </h2>}
         </div>

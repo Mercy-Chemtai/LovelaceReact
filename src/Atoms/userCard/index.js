@@ -1,9 +1,9 @@
 
- const UserCard =(image, fullName,id)=>{
+ const UserCard =( {image, fullName} )=>{
     return(
         <div>
             <img src={image} alt={`${fullName} profile`}/>
-            <h3>(fullName)</h3>
+            <h3>{fullName}</h3>
         </div>
     )
  } 

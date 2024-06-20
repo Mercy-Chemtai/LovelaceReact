@@ -20,7 +20,9 @@ const handleLogin = async(e) =>{
         <br/>
         <input placeholder="Enter password" type="password" onChange={(e)=>setPassword(e.target.value)}/>
         <br/>
+        
         <button type="submit">Login</button>
+        {/* <button  type="submit"><a href="">login</a></button> */}
         
         </form>
     )
